@@ -37,3 +37,31 @@ if (localStorage.getItem('bg')) {
 
 localStorage.setItem('persone', serializedPersone);
 console.log(JSON.parse( localStorage.getItem('persone') ));
+
+// regexp
+
+// new RegExp('patten', 'flags');
+// /pattern/f
+
+// const ans = prompt('Name?'),
+//       reg = /n/i;
+// i - case insensitive
+// g - global
+// m - multiline
+
+// \d - digits;  \D - not digits
+// \w - symbols; \W - not symbols
+// \s - spaces;  \S - not spaces
+
+// console.log(ans.search(reg));
+// console.log(ans.match(reg));
+
+// const pass = prompt('Enter password?');
+
+// console.log(pass.replace(/\./g, "**"));
+
+console.log('12-\t 34- 57 '.replace(/\s/g, ':'));
+
+const str = 'My name is R2D2';
+console.log(str.match(/\W/g));
+console.log(str.match(/\D/g));
